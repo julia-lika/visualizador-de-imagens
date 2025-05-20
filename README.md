@@ -1,55 +1,45 @@
-# Visualizador de Imagens com Filtros
+# Visualizador de Arquivos - Ponderada de Programação
 
-Este projeto é um visualizador de imagens com filtros em Python, utilizando `tkinter` e `Pillow`.
+Esse projeto é um editor de imagens simples e funcional feito com Python, usando o Streamlit para a interface e a biblioteca Pillow (PIL) para manipulação das imagens.
 
 ## Funcionalidades
 
-- Carregamento de imagens
-- Aplicação dos seguintes filtros:
-    - Escala de cinza
-    - Inversão de cores
-    - Aumento de contraste
-    - Desfoque
-    - Nitidez
-    - Detecção de bordas
-- Visualização da imagem original e processada lado a lado
-- Salvamento da imagem final
+Você pode:
 
-## Requisitos
+- Girar a imagem (de 0° a 360°)
+- Ajustar o brilho
+- Alterar o contraste
+- Deixar a imagem mais nítida
+- Converter para tons de cinza
+- Espelhar a imagem na horizontal ou vertical
+- Recortar a imagem manualmente
+- Baixar a imagem final com um clique
 
-- Python 3.x
-- Pillow
+## Como usar
 
-## Como executar
-
-### Passo 1: Instale as dependências
-
-Certifique-se de que você tem o Python 3.x instalado no seu sistema. Para instalar as dependências, execute o seguinte comando no terminal:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Passo 2: Execute o programa
-
-No terminal, navegue até o diretório do projeto e execute o seguinte comando:
-
-```bash
-python main.py
-```
-
-### Observação para usuários Linux
-
-Se você estiver utilizando Linux, pode ser necessário instalar o `tkinter` separadamente, caso ele não esteja incluído na sua instalação do Python. Para instalá-lo, use o gerenciador de pacotes da sua distribuição. Por exemplo:
-
-- **Ubuntu/Debian**:
+1. Instale as dependências (se ainda não tiver):
     ```bash
-    sudo apt-get install python3-tk
+    pip install streamlit pillow
     ```
 
-- **Fedora**:
+2. Execute o app:
+
     ```bash
-    sudo dnf install python3-tkinter
+    streamlit run main.py
     ```
 
-Após instalar o `tkinter`, repita os passos acima para executar o programa.
+3. Acesse no navegador o link que o Streamlit gerar (geralmente `http://localhost:8501`).
+
+4. Faça upload de uma imagem `.jpg`, `.jpeg` ou `.png`, ajuste os controles na barra lateral e veja as alterações em tempo real.
+
+5. Quando terminar, é só clicar no botão de download para salvar a imagem editada.
+
+
+## Sobre o código
+
+O projeto foi feito com o objetivo de estudar manipulação de imagens e criação de interfaces rápidas com Streamlit. Cada funcionalidade foi implementada usando recursos nativos da PIL.
+
+## Exemplos de Uso
+Com este código, é possível manipular imagens de diversas maneiras:
+
+![Diagrama de Sequência do Algoritmo de IA](/img/teste.png)
